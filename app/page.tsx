@@ -1,0 +1,1120 @@
+import Image from "next/image";
+import signaturedocument from "@/assets/signaturedocument.png";
+import signatureperson from "@/assets/signatureperson.png";
+import container from "@/assets/Container.png";
+import containertwo from "@/assets/Container (1).png";
+import containerthree from "@/assets/Container (2).png";
+import logo from "@/assets/image 1.png";
+import banner from "@/assets/banner.png";
+
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between ">
+            {/* Logo */}
+            <div className="flex items-center gap-3">
+              <div className="py-1 rounded-full  from-blue-900 to-blue-700 flex items-center justify-center">
+
+                <Image src={logo} alt="KSKA" className="w-[90px] h-[90px] object-contain"  />
+               
+              </div>
+              
+            </div>
+
+            {/* Navigation */}
+            <nav className="hidden md:flex items-center gap-8">
+              <a
+                href="#home"
+                className="text-gray-700 hover:text-blue-900 font-medium transition-colors"
+              >
+                Home
+              </a>
+              <a
+                href="#about"
+                className="text-gray-700 hover:text-blue-900 font-medium transition-colors"
+              >
+                About Us
+              </a>
+              <a
+                href="#services"
+                className="text-gray-700 hover:text-blue-900 font-medium transition-colors"
+              >
+                Services
+              </a>
+              <a
+                href="#insights"
+                className="text-gray-700 hover:text-blue-900 font-medium transition-colors"
+              >
+                Insights
+              </a>
+              <a
+                href="#contact"
+                className="text-gray-700 hover:text-blue-900 font-medium transition-colors"
+              >
+                Contact
+              </a>
+            </nav>
+
+            {/* Get Started Button */}
+            <button className="hidden md:block bg-blue-900 hover:bg-blue-800 text-white px-6 py-2.5 rounded-lg font-medium transition-colors">
+              Get Started
+            </button>
+
+            {/* Mobile Menu Button */}
+            <button className="md:hidden text-gray-900">
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      {/* Hero Section */}
+      <section
+        id="home"
+        className="pt-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden"
+      >
+        <div className="absolute inset-0 opacity-10">
+          <svg
+            className="w-full h-full"
+            viewBox="0 0 1200 600"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,300 Q300,200 600,300 T1200,300 L1200,600 L0,600 Z"
+              fill="white"
+            />
+            <path
+              d="M0,400 Q400,300 800,400 T1200,400 L1200,600 L0,600 Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-white">
+              <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6">
+                Building Tomorrow's Growth, Today.
+              </h1>
+              <p className="text-xl lg:text-2xl text-blue-100 mb-8 leading-relaxed">
+                An award-winning venture capital and investment firm in Los
+                Angeles set up in 2015.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button className="bg-orange-400 hover:bg-orange-500 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg">
+                  Get Started
+                </button>
+                <button className="bg-blue-800 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors border-2 border-blue-600">
+                  Learn More
+                </button>
+              </div>
+            </div>
+            <div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-br p-4 from-blue-700 to-blue-900 flex items-center justify-center">
+              <Image src={banner} alt="hero" className="w-full h-full object-contain" />
+              </div>
+             
+           
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* About Us Section */}
+      <section
+        id="about"
+        className="py-20 lg:py-32 bg-white relative border-l-2 border-r-2 border-[#032246]"
+      >
+        {/* Dotted Grid Background Pattern */}
+        <div
+          className="absolute inset-0 opacity-30"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle, #d1d5db 1px, transparent 1px)",
+            backgroundSize: "24px 24px",
+          }}
+        ></div>
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-4xl mx-auto">
+            {/* Who we are Tag */}
+            <div className="mb-6">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-gray-700 text-sm font-medium">
+                <span className="w-2 h-2 rounded-full bg-orange-400"></span>
+                Who we are
+              </span>
+            </div>
+
+            {/* Main Heading */}
+            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-[#032246] mb-6 leading-tight">
+              An award winning venture capital and investment firm in Los
+              Angeles set up in 2015.
+            </h2>
+
+            {/* Description */}
+            <p className="text-lg lg:text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl">
+              We are a global consulting and investment agency focused on
+              shaping future-defining businesses. Our team of strategists,
+              analysts, and investors blends market expertise with actionable
+              insights, guiding clients from ambition to success.
+            </p>
+
+            {/* Buttons */}
+            <div className="flex items-center gap-3 mb-20">
+              <button className="bg-[#032246] hover:bg-[#021a33] text-white px-8 py-3.5 rounded-lg font-semibold transition-colors">
+                More About Us
+              </button>
+              <button className="w-12 h-12 rounded-lg bg-orange-100 border-2 border-[#032246] flex items-center justify-center hover:bg-orange-200 transition-colors">
+                <svg
+                  className="w-5 h-5 text-[#032246]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M7 17L17 7M7 7h10v10"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Mission & Vision Section */}
+      {/* Statistics Section */}
+      <section className="py-20 lg:py-32 bg-white relative border-l-2 border-r-2 border-[#032246]">
+        {/* Dotted Grid Background Pattern */}
+        <div
+          className="absolute inset-0 opacity-30"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle, #d1d5db 1px, transparent 1px)",
+            backgroundSize: "24px 24px",
+          }}
+        ></div>
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-4xl mx-auto">
+            {/* Decorative Curved Line with Nodes */}
+            {/* <div className="relative mb-16 h-40 lg:h-48 -mx-4 sm:-mx-6 lg:-mx-8">
+              <svg className="w-full h-full" viewBox="0 0 1000 200" preserveAspectRatio="none">
+                <path
+                  d="M 0 40 Q 250 120 500 100 T 1000 80"
+                  fill="none"
+                  stroke="#d1d5db"
+                  strokeWidth="2"
+                  className="opacity-50"
+                />
+               
+                <circle cx="30" cy="40" r="5" fill="#ffa366" />
+                <circle cx="400" cy="110" r="5" fill="#ffa366" />
+                <circle cx="650" cy="120" r="5" fill="#ffa366" />
+                <circle cx="970" cy="80" r="5" fill="#ffa366" />
+              </svg>
+            </div> */}
+
+            {/* Statistics */}
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 pt-8 border-t-2 border-[#032246]">
+              <div>
+                <div className="text-5xl lg:text-6xl font-bold text-gray-800 mb-2">
+                  $1.2B+
+                </div>
+                <div className="text-gray-600 text-sm lg:text-base">
+                  Total Capital Deployed
+                </div>
+              </div>
+              <div>
+                <div className="text-5xl lg:text-6xl font-bold text-gray-800 mb-2">
+                  18+
+                </div>
+                <div className="text-gray-600 text-sm lg:text-base">
+                  Countries Invested In
+                </div>
+              </div>
+              <div>
+                <div className="text-5xl lg:text-6xl font-bold text-gray-800 mb-2">
+                  85+
+                </div>
+                <div className="text-gray-600 text-sm lg:text-base">
+                  Active Portfolio Companies
+                </div>
+              </div>
+              <div>
+                <div className="text-5xl lg:text-6xl font-bold text-gray-800 mb-2">
+                  $4.7B
+                </div>
+                <div className="text-gray-600 text-sm lg:text-base">
+                  Follow-On Funding Raised
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-20 px-5 relative  bg-[#0E2747]">
+        <div className="grid lg:grid-cols-2 gap-4">
+          {/* Our Mission - Left Side */}
+          <div className="bg-white p-8 lg:p-12 xl:p-16">
+            {/* Mission Tag */}
+            <div className="mb-6">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-50 border border-gray-200 text-gray-800 text-sm font-medium">
+                <span className="w-2 h-2 rounded-full bg-orange-400"></span>
+                Our Mission
+              </span>
+            </div>
+
+            {/* Mission Content */}
+            <div className="space-y-6">
+              <p className="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight">
+                Our mission is to identify, acquire, and manage high-potential
+                businesses that deliver consistent growth and profitability.
+              </p>
+              <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
+                We aim to empower our subsidiaries and partners through
+                strategic guidance, operational excellence, and financial
+                discipline—driving innovation and prosperity for all
+                stakeholders.
+              </p>
+            </div>
+          </div>
+
+          {/* Our Vision - Right Side */}
+          <div className="bg-[#384960] p-8 lg:p-12 xl:p-16 relative mt-8">
+            {/* Vision Tag */}
+            <div className="mb-6">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-gray-200 text-gray-800 text-sm font-medium">
+                <span className="w-2 h-2 rounded-full bg-[#032246]"></span>
+                Our Vision
+              </span>
+            </div>
+
+            {/* Vision Content */}
+            <div>
+              <p className="text-2xl lg:text-3xl font-bold leading-tight text-white">
+                To be a leading investment holding company recognized for
+                creating long-term sustainable value through strategic
+                partnerships, diversified investments, and responsible
+                stewardship of assets across global markets.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Border Line */}
+      </section>
+      "mising"
+      {/* Strategic Wealth Solutions Section */}
+      <section
+        id="services"
+        className="py-20 lg:py-32 relative border-l-2 border-r-2 border-[#032246]"
+        style={{ backgroundColor: "#FCF7F1" }}
+      >
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Our Services Tag */}
+          <div className="flex justify-center mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gray-800 text-gray-800 text-sm font-medium">
+              <span className="w-2 h-2 rounded-full bg-gray-800"></span>
+              Our Services
+            </span>
+          </div>
+
+          {/* Main Heading */}
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 text-center mb-20 max-w-4xl mx-auto leading-tight">
+            Strategic wealth solutions: elevate
+            <br />
+            investments with our expert guidance.
+          </h2>
+
+          <div className="space-y-16">
+            {/* Consulting Division */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+              <div className="grid lg:grid-cols-2 gap-0">
+                {/* Video Section */}
+                <div
+                  className="relative"
+                  style={{ width: "472px", height: "441px", maxWidth: "100%" }}
+                >
+                  <div className="absolute top-4 left-4 text-sm text-gray-500 z-10">
+                    001/002
+                  </div>
+                  <div className="absolute top-4 right-4 text-sm text-gray-500 z-10">
+                    2017
+                  </div>
+                  <video
+                    width={472}
+                    height={441}
+                    className="w-full h-full object-cover"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  >
+                    <source src="/first-video.mp4" type="video/mp4" />
+                  </video>
+                </div>
+
+                {/* Content Section */}
+                <div className="p-8 lg:p-12 flex flex-col justify-center">
+                  <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                    Consulting Division
+                  </h3>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                    For Years Now, Transformation Has Been A Catchall Term For
+                    How Organizations Make The Right Moves To Achieve Their Full
+                    Potential. Companies Usually Aim To Deliver Healthy
+                    Financial Performance And Organizational Effectiveness
+                    Before Focusing On Higher Growth, New Strategies, And
+                    Tech-Enabled Solutions.
+                  </p>
+                  <div className="flex items-center gap-3">
+                    <button className="bg-orange-50 hover:bg-orange-100 text-gray-900 px-6 py-3 rounded-lg font-semibold border border-orange-200 transition-colors">
+                      Book A Consultation
+                    </button>
+                    <button className="w-12 h-12 rounded-lg bg-orange-50 border border-gray-800 flex items-center justify-center hover:bg-orange-100 transition-colors">
+                      <svg
+                        className="w-5 h-5 text-gray-900"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Investment Division */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+              <div className="grid lg:grid-cols-2 gap-0">
+                {/* Video Section */}
+                <div
+                  className="relative"
+                  style={{ width: "472px", height: "441px", maxWidth: "100%" }}
+                >
+                  <div className="absolute top-4 left-4 text-sm text-gray-500 z-10">
+                    002/002
+                  </div>
+                  <div className="absolute top-4 right-4 text-sm text-gray-500 z-10">
+                    2017
+                  </div>
+                  <video
+                    width={472}
+                    height={441}
+                    className="w-full h-full object-cover"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  >
+                    <source src="/second-video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+
+                {/* Content Section */}
+                <div className="p-8 lg:p-12 flex flex-col justify-center">
+                  <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Investment Division
+                  </h3>
+                  <p className="text-lg text-gray-700 mb-8 italic">
+                    We Invest In People, Potential, And Progress.
+                  </p>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-4">
+                      <span className="text-lg font-semibold text-gray-700 min-w-[40px]">
+                        01
+                      </span>
+                      <span className="text-lg text-gray-700">
+                        Venture Capital & Private Equity
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-4">
+                      <span className="text-lg font-semibold text-gray-700 min-w-[40px]">
+                        02
+                      </span>
+                      <span className="text-lg text-gray-700">
+                        Real Estate & Infrastructure
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-4">
+                      <span className="text-lg font-semibold text-gray-700 min-w-[40px]">
+                        03
+                      </span>
+                      <span className="text-lg text-gray-700">
+                        Fintech & Emerging Tech
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-4">
+                      <span className="text-lg font-semibold text-gray-700 min-w-[40px]">
+                        04
+                      </span>
+                      <span className="text-lg text-gray-700">
+                        Clean Energy & Sustainability Projects
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Sector Focus Section */}
+      <section className="py-20 lg:py-28 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-16">
+            Shaping the future, sector by sector.
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Fintech */}
+            <div className="group cursor-pointer">
+              <div className="h-80 rounded-2xl bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 relative overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                <div className="absolute inset-0 opacity-20">
+                  <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blur-2xl"></div>
+                  <div className="absolute bottom-10 right-10 w-40 h-40 bg-purple-300 rounded-full blur-3xl"></div>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/50 to-transparent">
+                  <h3 className="text-2xl font-bold text-white">Fintech</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* Technology & AI */}
+            <div className="group cursor-pointer">
+              <div className="h-80 rounded-2xl bg-gradient-to-br from-blue-500 via-indigo-600 to-purple-700 relative overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                <div className="absolute inset-0 opacity-20">
+                  <div className="absolute top-20 right-20 w-36 h-36 bg-cyan-300 rounded-full blur-3xl"></div>
+                  <div className="absolute bottom-20 left-20 w-28 h-28 bg-blue-400 rounded-full blur-2xl"></div>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/50 to-transparent">
+                  <h3 className="text-2xl font-bold text-white">
+                    Technology & AI
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            {/* Healthcare */}
+            <div className="group cursor-pointer">
+              <div className="h-80 rounded-2xl bg-gradient-to-br from-blue-700 via-cyan-600 to-blue-500 relative overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                <div className="absolute inset-0 opacity-20">
+                  <div className="absolute top-16 left-16 w-24 h-24 bg-cyan-400 rounded-full blur-2xl"></div>
+                  <div className="absolute bottom-16 right-16 w-32 h-32 bg-blue-300 rounded-full blur-3xl"></div>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/50 to-transparent">
+                  <h3 className="text-2xl font-bold text-white">Healthcare</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Message from Chairman Section */}
+      <section className="py-20 lg:py-28 bg-[#032246ED]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl lg:text-[60px]  text-white text-center mb-16">
+            Message from the Chairman
+          </h2>
+
+          <div className="grid lg:grid-cols-4 gap-1  ">
+            <div className="flex flex-col items-center col-span-1">
+              <div
+                className="relative"
+                style={{ width: "100%", height: "500px", maxWidth: "100%" }}
+              >
+                <Image
+                  src={signatureperson}
+                  alt="Cason Bennett"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 lg:p-8 shadow-lg col-span-3 mt-8">
+              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                At KSKA, our foundation is built on vision, trust, and an
+                unwavering commitment to excellence. We believe that true
+                success lies not only in financial performance but also in the
+                positive impact we create for our communities, partners, and
+                future generations.
+              </p>
+
+              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                Over the years, we have expanded our investment horizons across
+                diverse sectors, guided by a clear strategy and a
+                forward-thinking mindset. As global markets evolve, our focus
+                remains steadfast: to grow responsibly, innovate continuously,
+                and deliver enduring value.
+              </p>
+
+              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                Together, we will continue to transform opportunities into
+                achievements and challenges into milestones.
+              </p>
+
+              <div className="flex  items-end">
+                <div
+                  className="relative"
+                  style={{ width: "200", height: "159px", maxWidth: "100%" }}
+                >
+                  <Image
+                    src={signaturedocument}
+                    alt="Cason Bennett"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* What Makes Us Special Section */}
+      <section className="py-20 lg:py-28 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-16">
+            What makes us special.
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Insight */}
+            <div className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                <svg
+                  className="w-8 h-8 text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M9 21c0 .5.4 1 1 1h4c.6 0 1-.5 1-1v-1H9v1zm3-19C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V17c0 .5.4 1 1 1h6c.6 0 1-.5 1-1v-2.3c1.8-1.3 3-3.4 3-5.7 0-3.9-3.1-7-7-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Insight</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Our deep industry knowledge and analytical prowess provide
+                unparalleled insights for informed decision-making.
+              </p>
+            </div>
+
+            {/* Excellence */}
+            <div className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                <svg
+                  className="w-8 h-8 text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                Excellence
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                We are committed to delivering exceptional results and
+                maintaining the highest standards in all our endeavors.
+              </p>
+            </div>
+
+            {/* Innovation */}
+            <div className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                <svg
+                  className="w-8 h-8 text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                Innovation
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                We embrace forward-thinking strategies and cutting-edge
+                technologies to drive progress and create value.
+              </p>
+            </div>
+
+            {/* Sustainability */}
+            <div className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                <svg
+                  className="w-8 h-8 text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                Sustainability
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                We prioritize long-term growth and responsible practices,
+                ensuring a positive impact on society and the environment.
+              </p>
+            </div>
+
+            {/* Integrity */}
+            <div className="bg-white p-8 rounded-xl border border-gray-200 hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                <svg
+                  className="w-8 h-8 text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                Integrity
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Honesty, transparency, and ethical conduct are the cornerstones
+                of our relationships and operations.
+              </p>
+            </div>
+
+            {/* Partnership */}
+            <div className="bg-blue-900 p-8 rounded-xl text-white hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-orange-400/20 rounded-full flex items-center justify-center mb-6">
+                <svg
+                  className="w-8 h-8 text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Partnership</h3>
+              <p className="text-blue-100 leading-relaxed mb-6">
+                We believe in collaborative partnerships, working closely with
+                clients to achieve shared goals and mutual success.
+              </p>
+              <button className="bg-orange-400 hover:bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Expert Insights Section */}
+      <section
+        id="insights"
+        className="py-20 lg:py-28"
+        style={{ backgroundColor: "#FFFAF4" }}
+      >
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center gap-4 mb-8">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-gray-800 text-sm font-medium">
+              <span className="w-2 h-2 rounded-full bg-orange-400"></span>
+              Our blogs
+            </span>
+
+            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-16 leading-tight lg:w-[800px] w-full">
+              Expert Insights To Improve Your Business Operations
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Post 1 */}
+            <div className=" rounded-xl overflow-hidden  transition-shadow cursor-pointer">
+              <div style={{ width: "100%", height: "300px", maxWidth: "100%" }}>
+                <Image
+                  src={container}
+                  alt="Understanding The Impact Of Data-Driven Consulting"
+                  width={400}
+                  height={400}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="py-2">
+                <div className="flex items-center gap-2 text-sm text-gray-600 mb-3">
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <span>MARCH 7, 2025</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Understanding The Impact Of Data-Driven Consulting
+                </h3>
+                <div className="flex items-center gap-2 text-blue-600 font-semibold">
+                  <span>Read More</span>
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M7 17L17 7M7 7h10v10"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            {/* Post 2 */}
+            <div className=" rounded-xl overflow-hidden  transition-shadow cursor-pointer">
+              <div style={{ width: "100%", height: "300px", maxWidth: "100%" }}>
+                <Image
+                  src={containertwo}
+                  alt="Maximizing Efficiency With Expert Consulting Solutions"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="py-2">
+                <div className="flex items-center gap-2 text-sm text-gray-600 mb-3">
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <span>MARCH 7, 2025</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Maximizing Efficiency With Expert Consulting Solutions
+                </h3>
+                <div className="flex items-center gap-2 text-blue-600 font-semibold">
+                  <span>Read More</span>
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M7 17L17 7M7 7h10v10"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            {/* Post 3 */}
+            <div className=" rounded-xl overflow-hidden  transition-shadow cursor-pointer">
+              <div style={{ width: "100%", height: "300px", maxWidth: "100%" }}>
+                <Image
+                  src={containerthree}
+                  alt="Tips For Navigating Business Challenges With Confidence"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="py-2">
+                <div className="flex items-center gap-2 text-sm text-gray-600 mb-3">
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <span>MARCH 7, 2025</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Tips For Navigating Business Challenges With Confidence
+                </h3>
+                <div className="flex items-center gap-2 text-blue-600 font-semibold">
+                  <span>Read More</span>
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M7 17L17 7M7 7h10v10"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            {/* Post 4 */}
+            <div className=" rounded-xl overflow-hidden  transition-shadow cursor-pointer">
+              <div
+                className="relative"
+                style={{ width: "100%", height: "300px", maxWidth: "100%" }}
+              >
+                <Image
+                  src={containertwo}
+                  alt="Strategic Business Growth Through Innovation"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className=" py-2">
+                <div className="flex items-center gap-2 text-sm text-gray-600 ">
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <span>MARCH 7, 2025</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Strategic Business Growth Through Innovation
+                </h3>
+                <div className="flex items-center gap-2 text-blue-600 font-semibold">
+                  <span>Read More</span>
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M7 17L17 7M7 7h10v10"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* CTA Section */}
+      <section className="py-20 lg:py-28 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="h-96 rounded-2xl bg-gradient-to-br from-blue-900 to-blue-800 relative overflow-hidden shadow-2xl">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+            </div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center text-white z-10">
+                <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+                  Ready to Get Started?
+                </h2>
+                <p className="text-xl text-blue-100 mb-8">
+                  Let's build tomorrow's growth together.
+                </p>
+                <button className="bg-orange-400 hover:bg-orange-500 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg">
+                  Contact Us
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Footer */}
+      <footer
+        id="contact"
+        className="bg-[#032246] text-white relative overflow-hidden"
+      >
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 left-0 text-9xl font-bold text-white">
+            KSKA
+          </div>
+          <div className="absolute bottom-0 right-0 text-9xl font-bold text-white">
+            KSKA
+          </div>
+        </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
+          <div className="grid md:grid-cols-3 gap-12 mb-12">
+            {/* Logo and Description */}
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className=" rounded-full bg-white/20 flex items-center justify-center">
+                <Image src={logo} alt="KSKA" className="w-[128px] h-[131px] object-contain"  />
+                </div>
+               
+              </div>
+              <p className="text-blue-100 leading-relaxed">
+                An award-winning venture capital and investment firm in Los
+                Angeles set up in 2015.
+              </p>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+              <ul className="space-y-2">
+                <li>
+                  <a
+                    href="#home"
+                    className="text-blue-100 hover:text-white transition-colors"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    className="text-blue-100 hover:text-white transition-colors"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#services"
+                    className="text-blue-100 hover:text-white transition-colors"
+                  >
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#insights"
+                    className="text-blue-100 hover:text-white transition-colors"
+                  >
+                    Insights
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    className="text-blue-100 hover:text-white transition-colors"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h3 className="text-lg font-bold mb-4">Contact Info</h3>
+              <ul className="space-y-3 text-blue-100">
+                <li>123 Main Street, Los Angeles, CA 90001</li>
+                <li>+1 234 567 8900</li>
+                <li>info@kska.com</li>
+              </ul>
+              <div className="flex gap-4 mt-6">
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-blue-800 pt-8 text-center text-blue-100">
+            <p>© 2023 KSKA. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
