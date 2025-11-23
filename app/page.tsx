@@ -6,6 +6,10 @@ import containertwo from "@/assets/Container (1).png";
 import containerthree from "@/assets/Container (2).png";
 import logo from "@/assets/image 1.png";
 import banner from "@/assets/banner.png";
+import freame1 from "@/assets/Frame 31.png";
+import freame2 from "@/assets/530bb260ec54574417b6ef567eb0b42c6a7d50a6.png";
+import freame3 from "@/assets/Frame 33.png";
+import footerImage from "@/assets/Component 3.png";
 
 export default function Home() {
   return (
@@ -17,11 +21,12 @@ export default function Home() {
             {/* Logo */}
             <div className="flex items-center gap-3">
               <div className="py-1 rounded-full  from-blue-900 to-blue-700 flex items-center justify-center">
-
-                <Image src={logo} alt="KSKA" className="w-[90px] h-[90px] object-contain"  />
-               
+                <Image
+                  src={logo}
+                  alt="KSKA"
+                  className="lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] object-contain"
+                />
               </div>
-              
             </div>
 
             {/* Navigation */}
@@ -87,23 +92,19 @@ export default function Home() {
         id="home"
         className="pt-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden"
       >
-        <div className="absolute inset-0 opacity-10">
-          <svg
-            className="w-full h-full"
-            viewBox="0 0 1200 600"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0,300 Q300,200 600,300 T1200,300 L1200,600 L0,600 Z"
-              fill="white"
-            />
-            <path
-              d="M0,400 Q400,300 800,400 T1200,400 L1200,600 L0,600 Z"
-              fill="white"
-            />
-          </svg>
-        </div>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover opacity-20"
+        >
+          <source src="/banner-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6">
@@ -114,20 +115,37 @@ export default function Home() {
                 Angeles set up in 2015.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-orange-400 hover:bg-orange-500 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg">
-                  Get Started
+                <button className="bg-white hover:bg-gray-50 text-[#032246] px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg flex items-center gap-0 group">
+                  <span>Book A Consultation</span>
+                  <div className="bg-orange-200 group-hover:bg-orange-300 w-12 h-12 ml-2 rounded-lg flex items-center justify-center transition-colors">
+                    <svg
+                      className="w-5 h-5 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M7 17L17 7M7 7h10v10"
+                      />
+                    </svg>
+                  </div>
                 </button>
-                <button className="bg-blue-800 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors border-2 border-blue-600">
-                  Learn More
+                <button className="bg-transparent hover:bg-white/10 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors border-2 border-white">
+                  Explore Our Portfolio
                 </button>
               </div>
             </div>
-            <div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-br p-4 from-blue-700 to-blue-900 flex items-center justify-center">
-              <Image src={banner} alt="hero" className="w-full h-full object-contain" />
+            <div className="relative h-[300px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-br lg:p-4 px-2 py-1 from-blue-700 to-blue-900 flex items-center justify-center">
+                <Image
+                  src={banner}
+                  alt="hero"
+                  className="w-full h-full object-contain"
+                />
               </div>
-             
-           
             </div>
           </div>
         </div>
@@ -148,7 +166,7 @@ export default function Home() {
         ></div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
             {/* Who we are Tag */}
             <div className="mb-6">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-gray-700 text-sm font-medium">
@@ -157,115 +175,160 @@ export default function Home() {
               </span>
             </div>
 
-            {/* Main Heading */}
-            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-[#032246] mb-6 leading-tight">
-              An award winning venture capital and investment firm in Los
-              Angeles set up in 2015.
-            </h2>
+            <div>
+              {/* Main Heading */}
+              <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-[#032246] mb-6 leading-tight">
+                An award winning venture capital and investment firm in Los
+                Angeles set up in 2015.
+              </h2>
 
-            {/* Description */}
-            <p className="text-lg lg:text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl">
-              We are a global consulting and investment agency focused on
-              shaping future-defining businesses. Our team of strategists,
-              analysts, and investors blends market expertise with actionable
-              insights, guiding clients from ambition to success.
-            </p>
+              {/* Description */}
+              <p className="text-lg lg:text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl">
+                We are a global consulting and investment agency focused on
+                shaping future-defining businesses. Our team of strategists,
+                analysts, and investors blends market expertise with actionable
+                insights, guiding clients from ambition to success.
+              </p>
 
-            {/* Buttons */}
-            <div className="flex items-center gap-3 mb-20">
-              <button className="bg-[#032246] hover:bg-[#021a33] text-white px-8 py-3.5 rounded-lg font-semibold transition-colors">
-                More About Us
-              </button>
-              <button className="w-12 h-12 rounded-lg bg-orange-100 border-2 border-[#032246] flex items-center justify-center hover:bg-orange-200 transition-colors">
-                <svg
-                  className="w-5 h-5 text-[#032246]"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M7 17L17 7M7 7h10v10"
-                  />
-                </svg>
-              </button>
+              {/* Buttons */}
+              <div className="flex items-center gap-3 mb-20">
+                <button className="bg-[#032246] hover:bg-[#021a33] text-white px-8 py-3.5 rounded-lg font-semibold transition-colors">
+                  More About Us
+                </button>
+                <button className="w-12 h-12 rounded-lg bg-orange-100 border-2 border-[#032246] flex items-center justify-center hover:bg-orange-200 transition-colors">
+                  <svg
+                    className="w-5 h-5 text-[#032246]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M7 17L17 7M7 7h10v10"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      {/* Mission & Vision Section */}
-      {/* Statistics Section */}
-      <section className="py-20 lg:py-32 bg-white relative border-l-2 border-r-2 border-[#032246]">
-        {/* Dotted Grid Background Pattern */}
-        <div
-          className="absolute inset-0 opacity-30"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle, #d1d5db 1px, transparent 1px)",
-            backgroundSize: "24px 24px",
-          }}
-        ></div>
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto">
-            {/* Decorative Curved Line with Nodes */}
-            {/* <div className="relative mb-16 h-40 lg:h-48 -mx-4 sm:-mx-6 lg:-mx-8">
-              <svg className="w-full h-full" viewBox="0 0 1000 200" preserveAspectRatio="none">
-                <path
+        <section className=" bg-white relative border-l-2 border-r-2 border-[#032246]">
+          {/* Dotted Grid Background Pattern */}
+          <div
+            className="absolute inset-0 opacity-30"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle, #d1d5db 1px, transparent 1px)",
+              backgroundSize: "24px 24px",
+            }}
+          ></div>
+
+          <div className="container mx-auto   lg:px-8 relative z-10">
+            <div className="lg:px-16 px-4">
+              {/* Decorative Curved Line with Nodes */}
+              <div className="relative mb-16 h-40 lg:h-60 -mx-4 sm:-mx-6 lg:-mx-8 lg:block hidden">
+                <svg
+                  className="w-full h-full"
+                  viewBox="0 0 1000 200"
+                  preserveAspectRatio="none"
+                >
+                  {/* Main curved line */}
+                  {/* <path
                   d="M 0 40 Q 250 120 500 100 T 1000 80"
                   fill="none"
                   stroke="#d1d5db"
                   strokeWidth="2"
-                  className="opacity-50"
-                />
-               
-                <circle cx="30" cy="40" r="5" fill="#ffa366" />
-                <circle cx="400" cy="110" r="5" fill="#ffa366" />
-                <circle cx="650" cy="120" r="5" fill="#ffa366" />
-                <circle cx="970" cy="80" r="5" fill="#ffa366" />
-              </svg>
-            </div> */}
+                  className="opacity-60"
+                /> */}
+                  {/* Vertical lines from data points */}
+                  <line
+                    x1="30"
+                    y1="40"
+                    x2="30"
+                    y2="200"
+                    stroke="#d1d5db"
+                    strokeWidth="1"
+                    className="opacity-40"
+                  />
+                  <line
+                    x1="400"
+                    y1="110"
+                    x2="400"
+                    y2="200"
+                    stroke="#d1d5db"
+                    strokeWidth="1"
+                    className="opacity-40"
+                  />
+                  <line
+                    x1="650"
+                    y1="120"
+                    x2="650"
+                    y2="200"
+                    stroke="#d1d5db"
+                    strokeWidth="1"
+                    className="opacity-40"
+                  />
+                  <line
+                    x1="970"
+                    y1="80"
+                    x2="970"
+                    y2="200"
+                    stroke="#d1d5db"
+                    strokeWidth="1"
+                    className="opacity-40"
+                  />
+                  {/* Orange data points */}
+                  <circle cx="30" cy="40" r="6" fill="#ff8c42" />
+                  <circle cx="400" cy="110" r="6" fill="#ff8c42" />
+                  <circle cx="650" cy="120" r="6" fill="#ff8c42" />
+                  <circle cx="970" cy="80" r="6" fill="#ff8c42" />
+                </svg>
+              </div>
 
-            {/* Statistics */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 pt-8 border-t-2 border-[#032246]">
-              <div>
-                <div className="text-5xl lg:text-6xl font-bold text-gray-800 mb-2">
-                  $1.2B+
+              {/* Statistics */}
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 pt-8 border-t-2 border-[#032246]">
+                <div>
+                  <div className="text-5xl lg:text-6xl font-bold text-gray-800 mb-2">
+                    $1.2B+
+                  </div>
+                  <div className="text-gray-600 text-sm lg:text-base">
+                    Total Capital Deployed
+                  </div>
                 </div>
-                <div className="text-gray-600 text-sm lg:text-base">
-                  Total Capital Deployed
+                <div>
+                  <div className="text-5xl lg:text-6xl font-bold text-gray-800 mb-2">
+                    18+
+                  </div>
+                  <div className="text-gray-600 text-sm lg:text-base">
+                    Countries Invested In
+                  </div>
                 </div>
-              </div>
-              <div>
-                <div className="text-5xl lg:text-6xl font-bold text-gray-800 mb-2">
-                  18+
+                <div>
+                  <div className="text-5xl lg:text-6xl font-bold text-gray-800 mb-2">
+                    85+
+                  </div>
+                  <div className="text-gray-600 text-sm lg:text-base">
+                    Active Portfolio Companies
+                  </div>
                 </div>
-                <div className="text-gray-600 text-sm lg:text-base">
-                  Countries Invested In
-                </div>
-              </div>
-              <div>
-                <div className="text-5xl lg:text-6xl font-bold text-gray-800 mb-2">
-                  85+
-                </div>
-                <div className="text-gray-600 text-sm lg:text-base">
-                  Active Portfolio Companies
-                </div>
-              </div>
-              <div>
-                <div className="text-5xl lg:text-6xl font-bold text-gray-800 mb-2">
-                  $4.7B
-                </div>
-                <div className="text-gray-600 text-sm lg:text-base">
-                  Follow-On Funding Raised
+                <div>
+                  <div className="text-5xl lg:text-6xl font-bold text-gray-800 mb-2">
+                    $4.7B
+                  </div>
+                  <div className="text-gray-600 text-sm lg:text-base">
+                    Follow-On Funding Raised
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </section>
+      {/* Mission & Vision Section */}
+      {/* Statistics Section */}
       <section className="py-20 px-5 relative  bg-[#0E2747]">
         <div className="grid lg:grid-cols-2 gap-4">
           {/* Our Mission - Left Side */}
@@ -347,7 +410,7 @@ export default function Home() {
                 {/* Video Section */}
                 <div
                   className="relative"
-                  style={{ width: "472px", height: "441px", maxWidth: "100%" }}
+                  style={{ width: "100%", height: "441px", maxWidth: "100%" }}
                 >
                   <div className="absolute top-4 left-4 text-sm text-gray-500 z-10">
                     001/002
@@ -369,7 +432,7 @@ export default function Home() {
                 </div>
 
                 {/* Content Section */}
-                <div className="p-8 lg:p-12 flex flex-col justify-center">
+                <div className="p-8 lg:p-12 flex flex-col">
                   <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
                     Consulting Division
                   </h3>
@@ -411,7 +474,7 @@ export default function Home() {
                 {/* Video Section */}
                 <div
                   className="relative"
-                  style={{ width: "472px", height: "441px", maxWidth: "100%" }}
+                  style={{ width: "100%", height: "441px", maxWidth: "100%" }}
                 >
                   <div className="absolute top-4 left-4 text-sm text-gray-500 z-10">
                     002/002
@@ -488,45 +551,46 @@ export default function Home() {
             Shaping the future, sector by sector.
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-8">
             {/* Fintech */}
             <div className="group cursor-pointer">
-              <div className="h-80 rounded-2xl bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 relative overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
-                <div className="absolute inset-0 opacity-20">
-                  <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blur-2xl"></div>
-                  <div className="absolute bottom-10 right-10 w-40 h-40 bg-purple-300 rounded-full blur-3xl"></div>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/50 to-transparent">
-                  <h3 className="text-2xl font-bold text-white">Fintech</h3>
-                </div>
+              <div
+                className="rounded-2xl relative overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                style={{ height: "524px" }}
+              >
+                <Image
+                  src={freame3}
+                  alt="Fintech"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
             {/* Technology & AI */}
             <div className="group cursor-pointer">
-              <div className="h-80 rounded-2xl bg-gradient-to-br from-blue-500 via-indigo-600 to-purple-700 relative overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
-                <div className="absolute inset-0 opacity-20">
-                  <div className="absolute top-20 right-20 w-36 h-36 bg-cyan-300 rounded-full blur-3xl"></div>
-                  <div className="absolute bottom-20 left-20 w-28 h-28 bg-blue-400 rounded-full blur-2xl"></div>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/50 to-transparent">
-                  <h3 className="text-2xl font-bold text-white">
-                    Technology & AI
-                  </h3>
-                </div>
+              <div
+                className="rounded-2xl relative overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                style={{ height: "524px" }}
+              >
+                <Image
+                  src={freame2}
+                  alt="Technology & AI"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
             {/* Healthcare */}
             <div className="group cursor-pointer">
-              <div className="h-80 rounded-2xl bg-gradient-to-br from-blue-700 via-cyan-600 to-blue-500 relative overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
-                <div className="absolute inset-0 opacity-20">
-                  <div className="absolute top-16 left-16 w-24 h-24 bg-cyan-400 rounded-full blur-2xl"></div>
-                  <div className="absolute bottom-16 right-16 w-32 h-32 bg-blue-300 rounded-full blur-3xl"></div>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/50 to-transparent">
-                  <h3 className="text-2xl font-bold text-white">Healthcare</h3>
-                </div>
+              <div
+                className="rounded-2xl relative overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                style={{ height: "524px" }}
+              >
+                <Image
+                  src={freame1}
+                  alt="Healthcare"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -539,11 +603,11 @@ export default function Home() {
             Message from the Chairman
           </h2>
 
-          <div className="grid lg:grid-cols-4 gap-1  ">
-            <div className="flex flex-col items-center col-span-1">
+          <div className="grid lg:grid-cols-4 grid-cols-1 gap-1  ">
+            <div className="flex flex-col items-center lg:col-span-1 ">
               <div
-                className="relative"
-                style={{ width: "100%", height: "500px", maxWidth: "100%" }}
+                className="relative lg:w-full lg:h-full w-full h-[400px]"
+                // style={{ width: "100%", height: "100%", maxWidth: "100%" }}
               >
                 <Image
                   src={signatureperson}
@@ -553,36 +617,43 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 lg:p-8 shadow-lg col-span-3 mt-8">
-              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                At KSKA, our foundation is built on vision, trust, and an
-                unwavering commitment to excellence. We believe that true
-                success lies not only in financial performance but also in the
-                positive impact we create for our communities, partners, and
-                future generations.
+            <div className="bg-white rounded-2xl p-2 lg:px-8 lg:py-4 shadow-lg lg:col-span-3   mt-8 w-full">
+              <p className="text-gray-700 leading-relaxed mb-6 text-2xl">
+                <i>
+                  At KSKA, our foundation is built on vision, trust, and an
+                  unwavering commitment to excellence. We believe that true
+                  success lies not only in financial performance but also in the
+                  positive impact we create for our communities, partners, and
+                  future generations.
+                </i>
               </p>
 
-              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                Over the years, we have expanded our investment horizons across
-                diverse sectors, guided by a clear strategy and a
-                forward-thinking mindset. As global markets evolve, our focus
-                remains steadfast: to grow responsibly, innovate continuously,
-                and deliver enduring value.
+              <p className="text-gray-700 leading-relaxed mb-6 text-2xl">
+                <i>
+                  Over the years, we have expanded our investment horizons
+                  across diverse sectors, guided by a clear strategy and a
+                  forward-thinking mindset. As global markets evolve, our focus
+                  remains steadfast: to grow responsibly, innovate continuously,
+                  and deliver enduring value.
+                </i>
               </p>
 
-              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                Together, we will continue to transform opportunities into
-                achievements and challenges into milestones.
+              <p className="text-gray-700 leading-relaxed mb-6 text-2xl ">
+                <i>
+                  Together, we will continue to transform opportunities into
+                  achievements and challenges into milestones.
+                </i>
               </p>
 
-              <div className="flex  items-end">
+              <div className="flex w-full justify-end ">
                 <div
-                  className="relative"
-                  style={{ width: "200", height: "159px", maxWidth: "100%" }}
+                  className="relative w-full flex  justify-end"
+                  style={{ width: "100%", height: "100px" }}
                 >
                   <Image
                     src={signaturedocument}
                     alt="Cason Bennett"
+                    layout="fill"
                     className="w-full h-full object-contain"
                   />
                 </div>
@@ -739,18 +810,18 @@ export default function Home() {
         style={{ backgroundColor: "#FFFAF4" }}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center gap-4 mb-8">
+          <div className=" lg:flex lg:flex-row flex-col  justify-between items-center gap-12 mb-8">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-gray-800 text-sm font-medium">
               <span className="w-2 h-2 rounded-full bg-orange-400"></span>
               Our blogs
             </span>
 
-            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-16 leading-tight lg:w-[800px] w-full">
+            <h2 className="lg:mt-0 mt-12 text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-16 leading-tight lg:w-[800px] w-full">
               Expert Insights To Improve Your Business Operations
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-8">
             {/* Post 1 */}
             <div className=" rounded-xl overflow-hidden  transition-shadow cursor-pointer">
               <div style={{ width: "100%", height: "300px", maxWidth: "100%" }}>
@@ -953,23 +1024,12 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 lg:py-28 bg-white relative overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="h-96 rounded-2xl bg-gradient-to-br from-blue-900 to-blue-800 relative overflow-hidden shadow-2xl">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-            </div>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center text-white z-10">
-                <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                  Ready to Get Started?
-                </h2>
-                <p className="text-xl text-blue-100 mb-8">
-                  Let's build tomorrow's growth together.
-                </p>
-                <button className="bg-orange-400 hover:bg-orange-500 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg">
-                  Contact Us
-                </button>
-              </div>
-            </div>
+          <div className="relative w-full h-[400px] inset-0 flex items-center justify-center">
+            <Image
+              src={footerImage}
+              alt="Ready to Get Started"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </section>
@@ -992,9 +1052,12 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <div className=" rounded-full bg-white/20 flex items-center justify-center">
-                <Image src={logo} alt="KSKA" className="w-[128px] h-[131px] object-contain"  />
+                  <Image
+                    src={logo}
+                    alt="KSKA"
+                    className="w-[128px] h-[131px] object-contain"
+                  />
                 </div>
-               
               </div>
               <p className="text-blue-100 leading-relaxed">
                 An award-winning venture capital and investment firm in Los
