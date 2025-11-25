@@ -15,11 +15,11 @@ import { blogPosts } from "./data";
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
+  
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between ">
-            {/* Logo */}
+         
             <div className="flex items-center gap-3">
               <div className="py-2 rounded-full  from-blue-900 to-blue-700 flex items-center justify-center">
                 <Image
@@ -30,7 +30,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Navigation */}
+         
             <nav className="hidden md:flex items-center gap-8">
               <a
                 href="#home"
@@ -54,22 +54,23 @@ export default function Home() {
                 href="#insights"
                 className="text-gray-700 hover:text-blue-900 font-medium transition-colors"
               >
-                Insights
+                Industries
               </a>
+
               <a
-                href="#contact"
+                href="#Contact"
                 className="text-gray-700 hover:text-blue-900 font-medium transition-colors"
               >
                 Contact
               </a>
             </nav>
 
-            {/* Get Started Button */}
+      
             <button className="hidden md:block bg-[#032246E8] text-white px-12 py-4   font-medium transition-colors">
               Get Started
             </button>
 
-            {/* Mobile Menu Button */}
+        
             <button className="md:hidden text-gray-900">
               <svg
                 className="w-6 h-6"
@@ -88,75 +89,55 @@ export default function Home() {
           </div>
         </div>
       </header>
-      {/* Hero Section */}
-      <section
-        id="home"
-        className="h-[892px]  bg-[#032246E8]   flex flex-col items-center justify-center "
-      >
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          className="absolute  w-full h-[892px] object-cover opacity-5"
-        >
-          <source src="/banner-video.mp4" type="video/mp4" />
-        </video>
 
-        <div className="w-full px-4 sm:px-6 lg:px-8 py-24 lg:py-32 relative z-10 ">
-          <div className="grid lg:grid-cols-3 gap-12 items-end">
-            <div className="text-white col-span-2">
-              <h1 className="text-5xl lg:text-6xl xl:text-[94px] font-bold leading-tight mb-6">
-                Building Tomorrow's <br /> Growth, Today.
-              </h1>
-              <p className="text-xl lg:text-[20px]  mb-8 leading-relaxed">
-                We bridge insight and capital to empower businesses, startups,
-                and investors with <br /> transformative consulting and
-                investment solutions.
-              </p>
-              {/* <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-white hover:bg-gray-50 text-[#032246] pl-8 pr-4 py-4  font-semibold text-lg transition-colors shadow-lg flex items-center gap-0 group">
-                  <span>Book A Consultation</span>
-                  <div className="bg-orange-200 group-hover:bg-orange-300 w-12 h-12 ml-2  flex items-center justify-center transition-colors">
-                    <svg
-                      className="w-5 h-5 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M7 17L17 7M7 7h10v10"
-                      />
-                    </svg>
-                  </div>
-                </button>
-                <button className="bg-transparent hover:bg-white/10 text-white px-8 py-4  font-semibold text-lg transition-colors border-2 border-white">
-                  Explore Our Portfolio
-                </button>
-              </div> */}
-            </div>
-            <div className="relative h-[300px] lg:h-[188px] rounded-2xl overflow-hidden">
-              <div className="absolute inset-0 bottom-0 left-0 right-0  flex items-end justify-center">
-                <Image
-                  src={banner}
-                  alt="hero"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section
+id="home"
+className="h-[892px]  bg-[#052245]   flex flex-col items-center justify-center "
+>
+<video
+  autoPlay
+  loop
+  muted
+  playsInline
+  preload="auto"
+  className="absolute  w-full h-[892px] object-cover opacity-5"
+>
+  <source src="/banner-video.mp4" type="video/mp4" />
+</video>
+
+<div className="w-full px-4 sm:px-6 lg:px-8 py-8 lg:py-32 relative z-10 ">
+  <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-12 gap-2 items-end">
+    <div className="text-white col-span-2">
+      <h1 className="text-5xl lg:text-6xl xl:text-[94px] font-bold leading-tight mb-6">
+        Building Tomorrow's <br /> Growth, Today.
+      </h1>
+      <p className="text-xl lg:text-[20px]  mb-8 leading-relaxed">
+        We bridge insight and capital to empower businesses, startups,
+        and investors with <br /> transformative consulting and
+        investment solutions.
+      </p>
+  
+    </div>
+    <div className="relative  h-[188px] rounded-2xl overflow-hidden ">
+      <div className="absolute inset-0 bottom-0 left-0 right-0  flex items-end justify-center">
+        <Image
+          src={banner}
+          alt="hero"
+          className="w-full h-full object-contain"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+ 
+     
       {/* About Us Section */}
       <section
         id="about"
         className="py-20 lg:py-32 bg-white relative border-l-2 border-r-2 border-[#032246]"
       >
-        {/* Dotted Grid Background Pattern */}
+    
         <div
           className="absolute inset-0 opacity-30"
           style={{
@@ -168,7 +149,7 @@ export default function Home() {
 
         <div className="container-xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
-            {/* Who we are Tag */}
+        
             <div className="mb-6">
               <span className="text-[16px] inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#E8BF96] text-gray-700 text-sm font-medium">
                 <span className="w-2 h-2 rounded-full bg-[#E8BF96]"></span>
@@ -177,13 +158,13 @@ export default function Home() {
             </div>
 
             <div className="space-y-12">
-              {/* Main Heading */}
-              <h2 className="text-4xl lg:text-5xl xl:text-[60px]  text-[#032246]  leading-[70px]">
+       
+              <h2 className="text-4xl lg:text-5xl xl:text-[60px]  text-[#032246]  lg:leading-[65px] leading-[45px]">
                 An award winning venture capital and investment firm in Los
                 Angeles set up in 2015.
               </h2>
 
-              {/* Description */}
+         
               <p className="text-lg lg:text-xl text-gray-700  leading-relaxed max-w-3xl">
                 We are a global consulting and investment agency focused on
                 shaping future-defining businesses. Our team of strategists,
@@ -191,7 +172,7 @@ export default function Home() {
                 insights, guiding clients from ambition to success.
               </p>
 
-              {/* Buttons */}
+             
               <div className="flex items-center gap-3 ">
                 <button className="text-[21.82px] flex items-center gap-4 bg-[#032246] hover:bg-[#021a33] text-white pl-10 pr-4 py-2 transition-colors">
                   More About Us
@@ -217,7 +198,7 @@ export default function Home() {
         </div>
 
         <section className=" bg-white relative border-l-2 border-r-2 border-[#032246]">
-          {/* Dotted Grid Background Pattern */}
+     
           <div
             className="absolute inset-0 opacity-30"
             style={{
@@ -229,105 +210,17 @@ export default function Home() {
 
           <div className="container mx-auto   lg:px-8 relative z-10">
             <div className="lg:px-16 px-4">
-              {/* Decorative Curved Line with Nodes */}
-              {/* <div className="relative mb-16 h-40 lg:h-60 -mx-4 sm:-mx-6 lg:-mx-8 lg:block hidden">
-                <svg
-                  className="w-full h-full"
-                  viewBox="0 0 1000 200"
-                  preserveAspectRatio="none"
-                >
-                 
-                
-                  <line
-                    x1="30"
-                    y1="40"
-                    x2="30"
-                    y2="200"
-                    stroke="#d1d5db"
-                    strokeWidth="1"
-                    className="opacity-40"
-                  />
-                  <line
-                    x1="400"
-                    y1="110"
-                    x2="400"
-                    y2="200"
-                    stroke="#d1d5db"
-                    strokeWidth="1"
-                    className="opacity-40"
-                  />
-                  <line
-                    x1="650"
-                    y1="120"
-                    x2="650"
-                    y2="200"
-                    stroke="#d1d5db"
-                    strokeWidth="1"
-                    className="opacity-40"
-                  />
-                  <line
-                    x1="970"
-                    y1="80"
-                    x2="970"
-                    y2="200"
-                    stroke="#d1d5db"
-                    strokeWidth="1"
-                    className="opacity-40"
-                  />
-             
-                  <circle cx="30" cy="40" r="6" fill="#ff8c42" />
-                  <circle cx="400" cy="110" r="6" fill="#ff8c42" />
-                  <circle cx="650" cy="120" r="6" fill="#ff8c42" />
-                  <circle cx="970" cy="80" r="6" fill="#ff8c42" />
-                </svg>
-              </div> */}
-
-              {/* Statistics */}
-              {/* <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 pt-8 border-t-2 border-[#032246]">
-                <div>
-                  <div className="text-5xl lg:text-6xl font-bold text-gray-800 mb-2">
-                    $1.2B+
-                  </div>
-                  <div className="text-gray-600 text-sm lg:text-base">
-                    Total Capital Deployed
-                  </div>
-                </div>
-                <div>
-                  <div className="text-5xl lg:text-6xl font-bold text-gray-800 mb-2">
-                    18+
-                  </div>
-                  <div className="text-gray-600 text-sm lg:text-base">
-                    Countries Invested In
-                  </div>
-                </div>
-                <div>
-                  <div className="text-5xl lg:text-6xl font-bold text-gray-800 mb-2">
-                    85+
-                  </div>
-                  <div className="text-gray-600 text-sm lg:text-base">
-                    Active Portfolio Companies
-                  </div>
-                </div>
-                <div>
-                  <div className="text-5xl lg:text-6xl font-bold text-gray-800 mb-2">
-                    $4.7B
-                  </div>
-                  <div className="text-gray-600 text-sm lg:text-base">
-                    Follow-On Funding Raised
-                  </div>
-                </div>
-              </div> */}
+        
             </div>
           </div>
         </section>
       </section>
-      {/* Mission & Vision Section */}
-      {/* Statistics Section */}
+   
       <section className="py-20 px-5 relative  bg-[#0E2747]">
         <div className="grid lg:grid-cols-2 gap-4">
-          {/* Our Mission - Left Side */}
+     
           <div className="bg-white p-8 lg:p-12 xl:p-16">
-            {/* Mission Tag */}
+         
 
             <div className="mb-6">
               <span className="text-[16px] inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#E8BF96] text-gray-700 text-sm font-medium">
@@ -336,7 +229,7 @@ export default function Home() {
               </span>
             </div>
 
-            {/* Mission Content */}
+        
             <div className="space-y-6 bg-[#F9F9F9]">
               <p className="text-2xl lg:text-3xl  text-[#032246] leading-tight">
                 Our mission is to identify, acquire, and manage high-potential
@@ -351,9 +244,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Our Vision - Right Side */}
+        
           <div className="bg-[#384960] p-8 lg:p-12 xl:p-16 relative mt-8">
-            {/* Vision Tag */}
+           
             <div className="mb-6">
               <span className="text-[16px] inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-gray-200 text-gray-800 text-sm font-medium">
                 <span className="w-2 h-2 rounded-full bg-[#032246]"></span>
@@ -361,7 +254,7 @@ export default function Home() {
               </span>
             </div>
 
-            {/* Vision Content */}
+      
             <div>
               <p className="text-2xl lg:text-[24px]  leading-[40px] text-white">
                 To be a leading investment holding company recognized for
@@ -373,9 +266,9 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Bottom Border Line */}
+  
       </section>
-      "mising"
+     
       {/* Strategic Wealth Solutions Section */}
       <section
         id="services"
@@ -383,7 +276,7 @@ export default function Home() {
         style={{ backgroundColor: "#FCF7F1" }}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Our Services Tag */}
+         
           <div className="flex justify-center mb-6">
             <span className="text-[16px] inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gray-800 text-gray-800 text-sm font-medium">
               <span className="w-2 h-2 rounded-full bg-gray-800"></span>
@@ -391,76 +284,15 @@ export default function Home() {
             </span>
           </div>
 
-          {/* Main Heading */}
-          <h2 className="text-3xl lg:text-4xl xl:text-[60px]  text-gray-900 text-center mb-20   leading-tight">
+        
+          <h2 className="text-xl lg:text-4xl xl:text-[60px]  text-gray-900 text-center mb-20   leading-tight">
             Strategic wealth solutions: elevate
             <br />
             investments with our expert guidance.
           </h2>
 
           <div className="space-y-16">
-            {/* <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="grid lg:grid-cols-2 gap-0">
-              
-                <div
-                  className="relative"
-                  style={{ width: "100%", height: "441px", maxWidth: "100%" }}
-                >
-                  <div className="absolute top-4 left-4 text-sm text-gray-500 z-10">
-                    001/002
-                  </div>
-                  <div className="absolute top-4 right-4 text-sm text-gray-500 z-10">
-                    2017
-                  </div>
-                  <video
-                    width={472}
-                    height={441}
-                    className="w-full h-full object-cover"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                  >
-                    <source src="/first-video.mp4" type="video/mp4" />
-                  </video>
-                </div>
-
-          
-                <div className="p-8 lg:p-12 flex flex-col">
-                  <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                    Consulting Division
-                  </h3>
-                  <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                    For Years Now, Transformation Has Been A Catchall Term For
-                    How Organizations Make The Right Moves To Achieve Their Full
-                    Potential. Companies Usually Aim To Deliver Healthy
-                    Financial Performance And Organizational Effectiveness
-                    Before Focusing On Higher Growth, New Strategies, And
-                    Tech-Enabled Solutions.
-                  </p>
-                  <div className="flex items-center gap-3">
-                    <button className="bg-orange-50 hover:bg-orange-100 text-gray-900 px-6 py-3 rounded-lg font-semibold border border-orange-200 transition-colors">
-                      Book A Consultation
-                    </button>
-                    <button className="w-12 h-12 rounded-lg bg-orange-50 border border-gray-800 flex items-center justify-center hover:bg-orange-100 transition-colors">
-                      <svg
-                        className="w-5 h-5 text-gray-900"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div> */}
+            
 
             <div className="bg-white rounded-lg overflow-hidden shadow-md px-4 pb-2">
               <div className="flex items-center justify-between p-4 text-[#111111] text-[16px] font-semibold">
@@ -468,7 +300,7 @@ export default function Home() {
                 <p className="right-4 text-sm ">2017</p>
               </div>
 
-              <div className="grid lg:grid-cols-3 gap-0">
+              <div className="grid lg:grid-cols-3 grid-cols-1 gap-0">
                 <div
                   className="relative col-span-1"
                   style={{ width: "100%", height: "100%", maxWidth: "100%" }}
@@ -476,7 +308,7 @@ export default function Home() {
                   <video
                     // width={472}
                     // height={441}
-                    className="w-[472px] h-full object-cover"
+                    className="lg:w-[472px] w-full h-full object-cover"
                     autoPlay
                     loop
                     muted
@@ -487,7 +319,7 @@ export default function Home() {
                   </video>
                 </div>
 
-                <div className="p-8 lg:p-12 flex flex-col justify-center col-span-2">
+                <div className=" p-4 lg:p-12 flex flex-col justify-center col-span-2">
                   <h3 className="text-3xl lg:text-[60px]  text-gray-900 mb-4">
                     Investment Division
                   </h3>
@@ -495,35 +327,28 @@ export default function Home() {
                     We Invest In People, Potential, And Progress.
                   </p>
                   <ul className="space-y-4">
-                    <li className="flex items-center gap-4">
+                    <li className="flex items-center  gap-4">
                       <span className="text-lg font-semibold text-[#E8BF96] min-w-[40px]">
                         01
                       </span>
-                      <span className="text-[30px] text-[#232318]">
+                      <span className="lg:text-[30px] text-sm text-[#232318]">
                         Venture Capital & Private Equity
                       </span>
                     </li>
-                    <li className="flex items-center gap-4">
+                    <li className="flex items-center  gap-4">
                       <span className="text-lg font-semibold text-[#E8BF96] min-w-[40px]">
                         02
                       </span>
-                      <span className="text-[30px] text-[#232318]">
+                      <span className="lg:text-[30px] text-sm text-[#232318]">
                         Real Estate & Infrastructure
                       </span>
                     </li>
-                    <li className="flex items-center gap-4">
+
+                    <li className="flex items-center  gap-4">
                       <span className="text-lg font-semibold text-[#E8BF96] min-w-[40px]">
                         03
                       </span>
-                      <span className="text-[30px] text-[#232318]">
-                        Fintech & Emerging Tech
-                      </span>
-                    </li>
-                    <li className="flex items-center gap-4">
-                      <span className="text-lg font-semibold text-[#E8BF96] min-w-[40px]">
-                        04
-                      </span>
-                      <span className="text-[30px] text-[#232318]">
+                      <span className="lg:text-[30px] text-sm text-[#232318]">
                         Clean Energy & Sustainability Projects
                       </span>
                     </li>
@@ -548,7 +373,7 @@ export default function Home() {
           </h2>
 
           <div className="grid md:grid-cols-3 grid-cols-1 gap-8">
-            {/* Fintech */}
+      
             <div className="group cursor-pointer">
               <div
                 className="rounded-2xl relative overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
@@ -562,7 +387,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Technology & AI */}
+      
             <div className="group cursor-pointer">
               <div
                 className="rounded-2xl relative overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
@@ -576,7 +401,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Healthcare */}
             <div className="group cursor-pointer">
               <div
                 className="rounded-2xl relative overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
@@ -592,7 +416,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Message from Chairman Section */}
+      
       <section className="py-20 lg:py-28 bg-[#032246ED]">
         <div className="mb-6 flex justify-center">
           <span className="text-[16px] inline-flex items-center gap-2 px-4 py-1.5 rounded-full  border border-[#E8BF96] text-white text-sm font-medium">
@@ -607,19 +431,7 @@ export default function Home() {
           </h2>
 
           <div className="grid lg:grid-cols-4 grid-cols-1 gap-1  ">
-            {/* <div className="flex flex-col items-center lg:col-span-1 ">
-              <div
-                className="relative lg:w-full lg:h-full w-full h-[400px]"
-                // style={{ width: "100%", height: "100%", maxWidth: "100%" }}
-              >
-                <Image
-                  src={signatureperson}
-                  alt="Cason Bennett"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            </div> */}
-
+         
             <div className="bg-[#F9F9F9]  p-2 lg:px-8 lg:py-16 shadow-lg lg:col-span-4   mt-8 w-full">
               <p className="text-[#032246] leading-relaxed mb-6 text-[24px]">
                 <i>
@@ -648,25 +460,13 @@ export default function Home() {
                 </i>
               </p>
 
-              {/* <div className="flex w-full justify-end ">
-                <div
-                  className="relative w-full flex  justify-end"
-                  style={{ width: "100%", height: "100px" }}
-                >
-                  <Image
-                    src={signaturedocument}
-                    alt="Cason Bennett"
-                    layout="fill"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              </div> */}
+           
             </div>
           </div>
         </div>
       </section>
       {/* What Makes Us Special Section */}
-      <section className="py-20 lg:py-20 bg-white">
+      <section className="py-20 lg:py-20">
         <div className="mb-6 flex justify-center">
           <span className="text-[16px] inline-flex items-center gap-2 px-4 py-1.5 rounded-full  border border-[#E8BF96] text-gray-800 text-sm font-medium">
             <span className="w-2 h-2 rounded-full bg-[#E8BF96]"></span>
@@ -682,48 +482,32 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts?.map((items, index) => (
               <div
-                className="bg-[#F9F9F9] p-8  hover:shadow-lg transition-shadow flex flex-col gap-20"
+                className="bg-[#F9F9F9] p-8  hover:shadow-lg transition-shadow flex flex-col justify-end gap-20"
                 key={index}
               >
-                <div className="relative h-[48px] w-[48px]">
-                  <Image
-                    src={items.image}
-                    alt="Insight"
-                    layout="fill"
-                    className="  object-contain"
-                  />
-                </div>
+                {items?.image && (
+                  <div className="relative h-[48px] w-[48px]">
+                    <Image
+                      src={items.image}
+                      alt="Insight"
+                      layout="fill"
+                      className="  object-contain"
+                    />
+                  </div>
+                )}
                 <div>
-                  <h3 className="text-[40px] font-semibold text-[#032246] mb-3">
-                    {items.title}{" "}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed text-[20px]">
+                  {items?.title && (
+                    <h3 className="text-[40px] font-semibold text-[#032246] mb-3">
+                      {items.title}{" "}
+                    </h3>
+                  )}
+
+                  <p className="text-gray-600 leading-relaxed text-[20px] ">
                     {items.discribtion}
                   </p>
                 </div>
               </div>
             ))}
-
-            <div className="bg-[#032246] p-8  text-white hover:shadow-xl transition-shadow flex justify-center items-center">
-              <button className="bg-white hover:bg-gray-50 text-[#032246] pl-8 pr-4 py-4  font-semibold text-lg transition-colors shadow-lg flex items-center gap-0 group">
-                <span>Book A Consultation</span>
-                <div className="bg-orange-200 group-hover:bg-orange-300 w-8 h-8 ml-2  flex items-center justify-center transition-colors">
-                  <svg
-                    className="w-5 h-5 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M7 17L17 7M7 7h10v10"
-                    />
-                  </svg>
-                </div>
-              </button>
-            </div>
           </div>
         </div>
       </section>
@@ -746,19 +530,18 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-8">
-            {/* Post 1 */}
+       
             <div className=" rounded-xl overflow-hidden  transition-shadow cursor-pointer">
               <div style={{ width: "100%", height: "250px", maxWidth: "100%" }}>
                 <Image
                   src={container}
                   alt="Understanding The Impact Of Data-Driven Consulting"
-                  width={400}
-                  height={400}
+             
                   className="w-full h-full object-contain"
                 />
               </div>
 
-              <div className="flex items-center gap-2 text-sm text-gray-600 mb-3 py-2">
+              <div className="flex items-center gap-2 text-sm text-gray-600 mb-3 py-4 lg:px-0   px-4">
                 <svg
                   className="w-5 h-5"
                   fill="none"
@@ -776,10 +559,10 @@ export default function Home() {
                   MARCH 7, 2025
                 </span>
               </div>
-              <h3 className="text-[23px]  text-gray-900 mb-4">
+              <h3 className="text-[23px]  text-gray-900 mb-4 lg:px-0   px-4">
                 Understanding The Impact Of Data-Driven Consulting
               </h3>
-              <div className="flex items-center gap-2 text-black  font-semibold">
+              <div className="flex items-center gap-2 text-black  font-semibold lg:px-0   px-4 ">
                 <span>Read More</span>
                 <svg
                   className="w-4 h-4"
@@ -797,7 +580,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Post 2 */}
+        
             <div className=" rounded-xl overflow-hidden  transition-shadow cursor-pointer">
               <div style={{ width: "100%", height: "250px", maxWidth: "100%" }}>
                 <Image
@@ -806,7 +589,7 @@ export default function Home() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="py-2">
+              <div className="py-4 lg:px-0   px-4">
                 <div className="flex items-center gap-2 text-sm text-gray-600 mb-3">
                   <svg
                     className="w-5 h-5"
@@ -847,7 +630,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Post 3 */}
+       
             <div className=" rounded-xl overflow-hidden  transition-shadow cursor-pointer">
               <div style={{ width: "100%", height: "250px", maxWidth: "100%" }}>
                 <Image
@@ -856,7 +639,7 @@ export default function Home() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="py-2">
+              <div className="py-4 lg:px-0   px-4">
                 <div className="flex items-center gap-2 text-sm text-gray-600 mb-3">
                   <svg
                     className="w-5 h-5"
@@ -897,7 +680,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Post 4 */}
+         
             <div className=" rounded-xl overflow-hidden  transition-shadow cursor-pointer">
               <div
                 className="relative"
@@ -909,7 +692,7 @@ export default function Home() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="py-2">
+              <div className="py-4 lg:px-0   px-4">
                 <div className="flex items-center gap-2 text-sm text-gray-600 mb-2 ">
                   <svg
                     className="w-5 h-5"
@@ -952,11 +735,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* CTA Section */}
-      {/* <section className="py-20 lg:py-28 bg-white relative overflow-hidden"> */}
-      <div className="">
+      <div className="group duration-700 text-black relative scale-50 hover:scale-100">
         <video
-          className="scale-50 hover:scale-100 transition-transform duration-600"
+          className=" transition-transform duration-600"
           autoPlay
           playsInline
           muted
@@ -964,28 +745,31 @@ export default function Home() {
         >
           <source src="/footerScale.mp4" type="video/mp4" />
         </video>
+        <div className="opacity-0 translate-y-10  group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 flex flex-col gap-16 absolute bottom-4 left-4 bg-[#e8bf96] px-8 py-16 text-white w-[600px] transition-all duration-700">
+          <p className="text-[60px] leading-16">
+            Smart Strategies for smart businesses
+          </p>
 
-        <button className="hidden hover:block absolute bottom-4 right-4 text-[#032246] pl-6 pr-4 py-3 font-semibold text-lg transition-all shadow-lg  items-center gap-2 group">
-          <span>Book A Consultation</span>
-          <div className="bg-orange-200 group-hover:bg-orange-300 w-12 h-12 flex items-center justify-center transition-colors">
-            <svg
-              className="w-5 h-5 text-white"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M7 17L17 7M7 7h10v10"
-              />
-            </svg>
-          </div>
-        </button>
+          <button className="text-[#032246] px-8 py-3 font-semibold text-lg shadow-lg bg-white flex items-center gap-8 w-fit transition-colors">
+            <span>Connect now</span>
+            <div className="bg-orange-300 w-12 h-12 flex items-center justify-center transition-colors">
+              <svg
+                className="w-5 h-5 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M7 17L17 7M7 7h10v10"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </div>
-      {/* </section> */}
-      {/* Footer */}
       <footer
         id="contact"
         className="bg-[#032246] text-white relative overflow-hidden"
@@ -1000,7 +784,7 @@ export default function Home() {
         </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
           <div className="grid md:grid-cols-3 gap-12 mb-12">
-            {/* Logo and Description */}
+        
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <div className=" rounded-full bg-white/20 flex items-center justify-center">
@@ -1017,7 +801,7 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Quick Links */}
+    
             <div>
               <h3 className="text-lg font-bold mb-4">Quick Links</h3>
               <ul className="space-y-2">
@@ -1042,6 +826,15 @@ export default function Home() {
                     href="#services"
                     className="text-blue-100 hover:text-white transition-colors"
                   >
+                    Industries
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#services"
+                    className="text-blue-100 hover:text-white transition-colors"
+                  >
                     Services
                   </a>
                 </li>
@@ -1050,27 +843,20 @@ export default function Home() {
                     href="#insights"
                     className="text-blue-100 hover:text-white transition-colors"
                   >
-                    Insights
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#contact"
-                    className="text-blue-100 hover:text-white transition-colors"
-                  >
                     Contact
                   </a>
                 </li>
               </ul>
             </div>
 
-            {/* Contact Info */}
+         
             <div>
               <h3 className="text-lg font-bold mb-4">Contact Info</h3>
               <ul className="space-y-3 text-blue-100">
-                <li>123 Main Street, Los Angeles, CA 90001</li>
+                <li>Ranchview Dr. Richardson, California 62639</li>
                 <li>+1 234 567 8900</li>
-                <li>info@kska.com</li>
+                <li>cyberguard@gmail.com</li>
+                <li>(406) 555-0120</li>
               </ul>
               <div className="flex gap-4 mt-6">
                 <a

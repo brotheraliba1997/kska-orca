@@ -42,6 +42,14 @@ export const blogPosts = [
   },
 
 
+  {
+    image: "",
+    title: "",
+    discribtion:
+      "An award-winning venture capital and investment firm in Los Angeles set up in 2015.",
+  },
+
+
 //   {
 //     image: container,
 //     title: "Book a Consultation",
