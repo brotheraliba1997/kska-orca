@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -21,5 +22,35 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-inter-tight), sans-serif;
+  font-family: "Mona Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+button,
+input,
+textarea,
+select,
+option,
+label,
+legend,
+table,
+th,
+td,
+tr,
+tbody,
+thead,
+tfoot,
+form,
+fieldset,
+legend,
+caption {
+  font-family: "Mona Sans", sans-serif;
 }
