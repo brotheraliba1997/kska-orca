@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "@/assets/image 1.png";
+import logo from "@/assets/KSKA Logo-02[2].png";
 import Image from "next/image";
 
 
@@ -21,11 +21,12 @@ function Footer() {
           <div className="grid md:grid-cols-3 gap-12 mb-12">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className=" rounded-full bg-white/20 flex items-center justify-center">
+                <div className=" relative w-[180px] h-[120px] lg:w-[220px] lg:h-[120px] flex items-center justify-center">
                   <Image
                     src={logo}
                     alt="KSKA"
-                    className="w-[128px] h-[131px] object-contain"
+                    className="object-cover"
+                    fill
                   />
                 </div>
               </div>
@@ -48,7 +49,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#about"
+                    href="/about-us"
                     className="text-blue-100 hover:text-white transition-colors"
                   >
                     About Us
@@ -56,7 +57,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#services"
+                    href="/indestries"
                     className="text-blue-100 hover:text-white transition-colors"
                   >
                     Industries
@@ -73,7 +74,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#insights"
+                    href="/contact-us"
                     className="text-blue-100 hover:text-white transition-colors"
                   >
                     Contact

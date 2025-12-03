@@ -1,6 +1,7 @@
 import React from "react";
 import banner from "@/assets/contact-banner.jpg";
 import Image from "next/image";
+import SectionBadge from "../components/sectionBadge";
 
 function ContactUs() {
   return (
@@ -41,11 +42,8 @@ function ContactUs() {
         <div className=" py-20 lg:py-32 container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 bg-[#F3F3F3]">
           {/* Header Section */}
           <div className="flex flex-col items-center mb-0">
-            <span className="text-[16px] inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#E8BF96] border border-[#E8BF96] text-[#032246] text-sm font-medium mb-6">
-              <span className="w-2 h-2 rounded-full bg-[#E8BF96]"></span>
-              Contact us
-            </span>
-            <h2 className="text-4xl lg:text-5xl xl:text-[48px] text-[#032246]  text-center">
+            <SectionBadge title="Contact us" />
+            <h2 className="text-4xl lg:text-5xl xl:text-[48px] text-[#032246] font-medium  text-center">
               Send us message!
             </h2>
           </div>

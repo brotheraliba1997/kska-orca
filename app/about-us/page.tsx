@@ -2,6 +2,7 @@ import React from "react";
 import banner from "@/assets/about-banner.png";
 import Image from "next/image";
 import Values from "../components/values";
+import SectionBadge from "../components/sectionBadge";
 
 function AboutUs() {
   return (
@@ -32,7 +33,7 @@ function AboutUs() {
       </section>
 
       {/* Our Promise Section */}
-      <section className="py-20 lg:py-32 bg-white relative">
+      <section className="py-20 lg:py-16 bg-white relative">
         {/* Subtle Dotted Pattern */}
         <div
           className="absolute inset-0 opacity-30"
@@ -44,64 +45,55 @@ function AboutUs() {
         ></div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          {/* Top Section - Our Promise */}
-          <div className="text-center mb-16 lg:mb-20">
-            {/* Tag */}
-            <div className="mb-6 flex justify-center">
-              <span className="text-[16px] inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#E8BF96] border border-[#E8BF96] text-gray-800 text-sm font-medium">
-                <span className="w-2 h-2 rounded-full bg-[#E8BF96]"></span>
-                Our Promise
-              </span>
+          <div className="text-center mb-16 lg:mb-20 ">
+            <SectionBadge title="Our Promise" />
+
+            <div className="relative  ">
+              <h2 className="text-[22px]  lg:text-[60px] text-[#0E2746] mb-4 lg:leading-[80px] leading-[30px] relative z-10">
+                Trusted capital and proven partnerships <br /> fueling
+                sustainable growth through <br /> experience, insight & impact.
+              </h2>
+
+              <div className="bg-gradient-to-b from-transparent to-[#ffffff] via-transparent absolute top-0 left-0 w-full h-full z-10"></div>
             </div>
-
-            {/* Main Heading */}
-            <h2 className="text-4xl lg:text-5xl xl:text-[60px] text-[#0E2746] font-bold mb-4 leading-tight">
-              Trusted capital and proven partnerships fueling sustainable growth through
-            </h2>
-
-            {/* Sub-heading */}
-            <p className="text-xl lg:text-2xl text-gray-600">
-              experience, insight & impact.
-            </p>
           </div>
 
-          {/* Bottom Section - Mission & Vision */}
-          <div className="grid lg:grid-cols-2 gap-0">
-            {/* Left Block - Our Mission */}
-            <div className="bg-white p-8 lg:p-12 xl:p-16">
-              {/* Tag */}
-              <div className="mb-6">
-                <span className="text-[16px] inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#E8BF96] border border-[#E8BF96] text-gray-800 text-sm font-medium">
-                  <span className="w-2 h-2 rounded-full bg-[#E8BF96]"></span>
-                  Our Mission
-                </span>
-              </div>
+         
+          <div className="grid lg:grid-cols-2 gap-4 bg-white">
+           
+            <div className="bg-[#F9F9F9] p-8 lg:p-12 xl:p-16">
+        
+              <SectionBadge title="Our Mission" />
 
-              {/* Content */}
-              <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
+             
+              <div className="space-y-4 text-gray-700 text-[20px] lg:text-[24px] leading-relaxed">
                 <p>
-                  Our mission is to identify, acquire, and manage high-potential businesses that deliver consistent growth and profitability.
+                  Our mission is to identify, acquire, and manage high-potential
+                  businesses that deliver consistent growth and profitability.
                 </p>
                 <p>
-                  We aim to empower our subsidiaries and partners through strategic guidance, operational excellence, and financial discipline—driving innovation and prosperity for all stakeholders.
+                  We aim to empower our subsidiaries and partners through
+                  strategic guidance, operational excellence, and financial
+                  discipline—driving innovation and prosperity for all
+                  stakeholders.
                 </p>
               </div>
             </div>
 
-            {/* Right Block - Our Vision */}
-            <div className="bg-[#FCF7F1] p-8 lg:p-12 xl:p-16">
-              {/* Tag */}
-              <div className="mb-6">
-                <span className="text-[16px] inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#E8BF96] border border-[#E8BF96] text-gray-800 text-sm font-medium">
-                  <span className="w-2 h-2 rounded-full bg-[#E8BF96]"></span>
-                  Our Vision
-                </span>
-              </div>
+       
+            <div className="bg-[#FCF7F1] p-8 lg:p-12 xl:p-16 mt-12">
+          
 
-              {/* Content */}
-              <div className="text-gray-700 text-lg leading-relaxed">
+              <SectionBadge title="Our Vision" />
+
+           
+              <div className="text-gray-700 text-[20px] lg:text-[24px] leading-relaxed">
                 <p>
-                  To be a leading investment holding company recognized for creating long-term sustainable value through strategic partnerships, diversified investments, and responsible stewardship of assets across global markets.
+                  To be a leading investment holding company <br /> recognized
+                  for creating long-term sustainable <br /> value through
+                  strategic partnerships, <br /> diversified investments, and
+                  responsible <br /> stewardship of assets across global
+                  markets.
                 </p>
               </div>
             </div>
@@ -110,30 +102,27 @@ function AboutUs() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 lg:py-32 bg-[#0E2746] relative border-l-2 border-r-2 border-[#032246]">
+      <section className="py-20 lg:py-16 bg-[#273D58] relative border-l-2 border-r-2 border-[#032246]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto">
-            {/* Why Choose Us Tag */}
-            <div className="mb-6 flex justify-center">
-              <span className="text-[16px] inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#E8BF96] text-gray-800 text-sm font-medium">
-                <span className="w-2 h-2 rounded-full bg-[#E8BF96]"></span>
-                Why Choose Us
-              </span>
-            </div>
-
-            {/* Main Heading */}
-            <h2 className="text-4xl lg:text-5xl xl:text-[60px] text-white font-bold mb-6 leading-tight">
+          <div className="text-center  mx-auto">
+       
+          
+            <SectionBadge title="Why Choose Us" />
+        
+            <h2 className="text-2xl  xl:text-[60px] text-white  mb-6 leading-tight">
               Our expertise and experience
             </h2>
 
-            {/* Descriptive Paragraph */}
-            <p className="text-white text-lg lg:text-xl leading-relaxed">
-              We are a global consulting and investment agency dedicated to shaping future-defining businesses. Our team combines market expertise with actionable insights to guide clients from ambition to success.
+           
+            <p className="text-white text-[20px] lg:text-[24px] leading-relaxed">
+              We are a global consulting and investment agency dedicated to
+              shaping future-defining businesses. Our <br /> team combines
+              market expertise with actionable insights to guide clients from
+              ambition to success.
             </p>
           </div>
         </div>
       </section>
-
 
       <Values />
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import logo from "@/assets/image 1.png";
+import logo from "@/assets/KSKA Logo-01[1].png";
 import Link from "next/link";
 
 function Header() {
@@ -10,11 +10,17 @@ function Header() {
         <div className="flex items-center justify-between ">
           <div className="flex items-center gap-3">
             <div className="py-2 rounded-full  from-blue-900 to-blue-700 flex items-center justify-center">
-              <Image
+             <div className="relative w-[120px] h-[80px] lg:w-[140px] lg:h-[80px]">
+             <Image
                 src={logo}
                 alt="KSKA"
-                className="lg:w-[80px] lg:h-[80px] w-[50px] h-[50px] object-contain"
+                className=" object-cover"
+                fill
               />
+
+             </div>
+             
+              
             </div>
           </div>
 
