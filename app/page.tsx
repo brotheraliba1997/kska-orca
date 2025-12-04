@@ -79,7 +79,7 @@ export default function Home() {
             </div>
 
             <div className="space-y-12">
-              <h2 className="text-4xl lg:text-5xl xl:text-[60px]  text-[#032246]  lg:leading-[65px] leading-[45px]">
+              <h2 className="text-4xl lg:text-5xl xl:text-[60px]  text-[#06582b]  lg:leading-[65px] leading-[45px]">
                 An award winning venture capital and investment firm in Los
                 Angeles set up in 2015.
               </h2>

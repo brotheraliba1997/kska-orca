@@ -26,7 +26,7 @@ function ContactUs() {
         <div className="relative z-10 h-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
           <div className="text-center mt-28">
             <p className="text-white text-sm lg:text-base mb-2 font-medium opacity-90">
-              CONTACT
+              CONTACT US
             </p>
             <h1 className="text-4xl lg:text-6xl xl:text-[64px]  text-white leading-tight">
               Contact With Us
