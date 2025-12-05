@@ -78,8 +78,9 @@ export default function Home() {
             </div>
 
             <div className="space-y-12">
-              <h2 className="text-4xl lg:text-5xl xl:text-[60px]  text-[#384960]  lg:leading-[60px] leading-[40px]">
-              Trusted capital and proven <br /> partnerships fueling sustainable growth through experience, insight, and impact.
+              <h2 className="text-4xl lg:text-5xl xl:text-[51px]  text-[#384960]  lg:leading-[60px] leading-[40px]">
+                Trusted capital and proven partnerships fueling sustainable
+                growth through experience, insight, and impact.
               </h2>
 
               <p className="text-lg lg:text-xl text-gray-700  leading-relaxed max-w-3xl">
