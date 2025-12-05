@@ -79,9 +79,8 @@ export default function Home() {
             </div>
 
             <div className="space-y-12">
-              <h2 className="text-4xl lg:text-5xl xl:text-[60px]  text-[#06582b]  lg:leading-[65px] leading-[45px]">
-                An award winning venture capital and investment firm in Los
-                Angeles set up in 2015.
+              <h2 className="text-4xl lg:text-5xl xl:text-[60px]  text-[#384960]  lg:leading-[65px] leading-[45px]">
+              Trusted capital and proven partnerships fueling sustainable growth through experience, insight, and impact.
               </h2>
 
               <p className="text-lg lg:text-xl text-gray-700  leading-relaxed max-w-3xl">
